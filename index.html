@@ -1,24 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>future-pathfinder-script</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureGuide - AI-Powered Career Discovery Platform</title>
+    <meta name="description" content="Revolutionary career guidance platform using AI to help students discover their ideal career path through personalized quizzes, visualizations, and success stories.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.462.0/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="sparkles"></i>
+                    AI-Powered Career Discovery
+                </div>
+                <h1 class="hero-title">
+                    Discover Your <span class="gradient-text">Future Career</span> 
+                    with AI Precision
+                </h1>
+                <p class="hero-description">
+                    Revolutionary platform that uses advanced AI to analyze your personality, 
+                    skills, and aspirations to create a personalized career roadmap.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('quiz-section')">
+                        <i data-lucide="play"></i>
+                        Start Career Discovery
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('features-section')">
+                        <i data-lucide="eye"></i>
+                        See Innovation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta property="og:title" content="future-pathfinder-script" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Features Section -->
+    <section id="features-section" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="zap"></i>
+                    Innovation Highlights
+                </div>
+                <h2 class="section-title">Revolutionary Career Discovery Features</h2>
+                <p class="section-description">
+                    Each feature represents a breakthrough in career guidance technology
+                </p>
+            </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+            <div class="features-grid">
+                <div class="feature-card" onclick="showFeature('quiz')">
+                    <div class="feature-icon bg-gradient-primary">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>Gamified Aptitude Quiz</h3>
+                    <p>Story-driven scenarios that make career discovery engaging and insightful</p>
+                    <div class="feature-btn">
+                        <i data-lucide="arrow-right"></i>
+                        Try Live Demo
+                    </div>
+                </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <div class="feature-card" onclick="showFeature('visualizer')">
+                    <div class="feature-icon bg-gradient-success">
+                        <i data-lucide="eye"></i>
+                    </div>
+                    <h3>Future Self Visualizer</h3>
+                    <p>AI-generated vision boards that help students visualize their career aspirations</p>
+                    <div class="feature-btn">
+                        <i data-lucide="arrow-right"></i>
+                        Create Vision
+                    </div>
+                </div>
+
+                <div class="feature-card" onclick="showFeature('narrative')">
+                    <div class="feature-icon bg-accent">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3>Personalized AI Narrative</h3>
+                    <p>Unique, tailored course recommendations based on personality analysis</p>
+                    <div class="feature-btn">
+                        <i data-lucide="arrow-right"></i>
+                        Get Journey
+                    </div>
+                </div>
+
+                <div class="feature-card" onclick="showFeature('stories')">
+                    <div class="feature-icon bg-warning">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Local Success Stories</h3>
+                    <p>Authentic testimonials from local alumni building trust and inspiration</p>
+                    <div class="feature-btn">
+                        <i data-lucide="arrow-right"></i>
+                        Read Stories
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="demo-section">
+        <div class="container">
+            <div id="quiz-demo" class="demo-container">
+                <!-- Quiz content will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualizer Section -->
+    <section id="visualizer-section" class="demo-section">
+        <div class="container">
+            <div id="visualizer-demo" class="demo-container">
+                <!-- Visualizer content will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Narrative Section -->
+    <section id="narrative-section" class="demo-section">
+        <div class="container">
+            <div id="narrative-demo" class="demo-container">
+                <!-- Narrative content will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="stories-section" class="demo-section">
+        <div class="container">
+            <div id="stories-demo" class="demo-container">
+                <!-- Stories content will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
